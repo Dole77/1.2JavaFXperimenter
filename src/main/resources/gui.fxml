@@ -9,34 +9,39 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<Scene height="600" width="800" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuiController">
+<Scene height="600" width="800" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+       fx:controller="Hello.GuiController">
    <AnchorPane prefHeight="403.0" prefWidth="611.0">
       <children>
-         <TitledPane animated="false" layoutX="-20.0" prefHeight="600.0" prefWidth="800.0" text="AAMM-Produktion" textFill="#e70505">
-           <content>
-             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <TitledPane animated="false" layoutX="-20.0" prefHeight="600.0" prefWidth="800.0" text="AAMM-Produktion"
+                     textFill="#e70505">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                   <children>
-                     <Label fx:id="label" layoutX="492.0" layoutY="46.0" prefHeight="46.0" prefWidth="92.0" text="Puls" textFill="#08dc01">
+                     <Label fx:id="label" layoutX="492.0" layoutY="46.0" prefHeight="46.0" prefWidth="92.0" text="Puls"
+                            textFill="#08dc01">
                         <font>
-                           <Font name="System Bold" size="19.0" />
-                        </font></Label>
-                     <Label fx:id="label2" layoutX="492.0" layoutY="148.0" prefHeight="46.0" prefWidth="92.0" text="S[P]O2" textFill="#ecf705">
+                           <Font name="System Bold" size="19.0"/>
+                        </font>
+                     </Label>
+                     <Label fx:id="label2" layoutX="492.0" layoutY="148.0" prefHeight="46.0" prefWidth="92.0"
+                            text="S[P]O2" textFill="#ecf705">
                         <font>
-                           <Font name="System Bold" size="19.0" />
-                        </font></Label>
-                     <Label fx:id="label3" layoutX="492.0" layoutY="259.0" prefHeight="46.0" prefWidth="92.0" text="Temp " textFill="#00ffcc">
+                           <Font name="System Bold" size="19.0"/>
+                        </font>
+                     </Label>
+                     <Label fx:id="label3" layoutX="492.0" layoutY="259.0" prefHeight="46.0" prefWidth="92.0"
+                            text="Temp " textFill="#00ffcc">
                         <font>
                            <Font name="System Bold" size="19.0" />
                         </font></Label>
                      <TitledPane animated="false" layoutX="17.0" layoutY="1.0" prefHeight="346.0" prefWidth="418.0" text="Diagnomonic" textFill="#03e412">
-                       <content>
-                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                              <children>
-                                 <Button fx:id="EKG" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="EKG" />
-                                 <TextArea fx:id="EKGWiev" layoutX="14.0" layoutY="40.0" prefHeight="200.0" prefWidth="200.0" />
-                              </children>
-                         </AnchorPane>
-                       </content>
+                        <content>
+                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                              <Button onMouseClicked="#startEkg">Start Ekg</Button>
+                              <TextArea fx:id="ekgView" layoutY="25.0" prefHeight="200.0" prefWidth="200.0"/>
+                           </AnchorPane>
+                        </content>
                      </TitledPane>
                      <TextArea layoutX="584.0" layoutY="14.0" prefHeight="100.0" prefWidth="200.0">
                         <font>
