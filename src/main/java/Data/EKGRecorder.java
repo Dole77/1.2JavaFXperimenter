@@ -2,7 +2,6 @@ package Data;
 
 import Buisnes.EKGObserver;
 
-
 public class EKGRecorder implements EKGDataRecorder {
     private EKGObserver observer;
 
@@ -16,7 +15,7 @@ public class EKGRecorder implements EKGDataRecorder {
                     while (true) {
                         Thread.sleep(500);
                         if (observer != null) {
-                            observer.handle(new EKGDatalmpl(Math.random(), Math.random()));
+                            observer.handle(new EKGDataImpl(Math.random(), Math.random()));
                         }
                     }
                 } catch (InterruptedException e) {
@@ -30,6 +29,6 @@ public class EKGRecorder implements EKGDataRecorder {
 
     @Override
     public void setObserver(EKGObserver observer) {
-
+        this.observer = observer;
     }
 }

@@ -4,7 +4,7 @@ import Data.EKGData;
 import Data.EKGDataRecorder;
 import Data.EKGRecorder;
 
-public class EKGControllermpl implements EKGController, EKGObserver {
+public class EKGControllerImpl implements EKGController, EKGObserver {
     EKGDataRecorder ekgDataRecorder = (EKGDataRecorder) new EKGRecorder();
     private EKGObserver observer;
 
