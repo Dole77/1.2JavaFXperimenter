@@ -1,7 +1,10 @@
+// Kode hentet fra :
+// https://github.com/cbudtz/IT2Lektion08MVCapp
+
 package Hello;
 
 import Buisnes.EKGController;
-import Buisnes.EKGControllermpl;
+import Buisnes.EKGControllerImpl;
 import Buisnes.EKGObserver;
 import Data.EKGData;
 import javafx.fxml.FXML;
@@ -10,7 +13,7 @@ import javafx.scene.input.MouseEvent;
 
 
 public class GuiController implements EKGObserver {
-    EKGController ekgController = new EKGControllermpl();
+    EKGController ekgController = new EKGControllerImpl();
     @FXML
     public TextArea ekgView;
 

@@ -1,10 +1,12 @@
+// Kode hentet fra :
+// https://github.com/cbudtz/IT2Lektion08MVCapp
 package Buisnes;
 
 import Data.EKGData;
 import Data.EKGDataRecorder;
 import Data.EKGRecorder;
 
-public class EKGControllermpl implements EKGController, EKGObserver {
+public class EKGControllerImpl implements EKGController, EKGObserver {
     EKGDataRecorder ekgDataRecorder = (EKGDataRecorder) new EKGRecorder();
     private EKGObserver observer;
 

@@ -1,10 +1,13 @@
+// Kode hentet fra :
+// https://github.com/cbudtz/IT2Lektion08MVCapp
+
 package Data;
 
-public class EKGDatalmpl implements EKGData {
+public class EKGDataImpl implements EKGData {
     private double voltage;
     private double time;
 
-    public EKGDatalmpl(double voltage, double time) {
+    public EKGDataImpl(double voltage, double time) {
         this.time = time;
         this.voltage = voltage;
 

@@ -1,7 +1,11 @@
+// Kode hentet fra :
+// https://github.com/cbudtz/IT2Lektion08MVCapp
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 
 
